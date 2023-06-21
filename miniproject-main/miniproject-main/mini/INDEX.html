@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Daily Braille</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+        <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+  </head>
+  <body>
+
+    <div class="container">
+
+        
+         
+      
+    
+     <img src="hero.png" alt="" class="aa">
+     
+           
+      <div class="heading"><h1>Explore your daily dose of Braille</h1></div>
+      <div class="www"><img src="c:\Users\alfit\Documents\miniproject-main\miniproject-main\logo.png" alt="" class="aaa"></div>
+      
+      <div class="form">
+        <div class="form-inner">
+
+          <input type="file" class="button" accept=".pdf, .txt,.png" id="upload" onchange="handleFile()">
+
+          <select class="button" id="language" >
+            <option value="English">English</option>
+            <option value="German">German</option>
+            <option value="Malayalam">Malayalam</option>
+            <option value="Hindi">Hindi</option>
+          </select>
+
+          <a href="translate.html"><input type="button" class="button" value="Translate" id="predict" onclick="getSelectedOption()"></a>
+
+        </div>
+
+        <div class="vattam">
+          <img src="Ellipse.png">
+        </div>
+        
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
